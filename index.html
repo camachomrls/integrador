@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarmoNet - La música perfecta para tu evento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dark">
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <span class="logo-text">HarmoNet</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Explorar</a>
+                    <a href="#" class="nav-link">Categorías</a>
+                    <a href="#" class="nav-link">Cómo funciona</a>
+                    <a href="#" class="nav-link">Para músicos</a>
+                </div>
+
+                <!-- Right section -->
+                <div class="nav-right">
+                    <button class="nav-btn">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <button class="nav-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="btn-gradient">Únete como músico</button>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-accent hero-accent-1"></div>
+            <div class="hero-accent hero-accent-2"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">La música perfecta para tu evento</h1>
+                <p class="hero-subtitle">
+                    Conecta con los mejores músicos y artistas profesionales. 
+                    Encuentra el talento perfecto para hacer de tu evento una experiencia inolvidable.
+                </p>
+                <button class="btn-cta">
+                    <i class="fas fa-search"></i>
+                    Buscar Músicos
+                </button>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Músicos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1,200+</div>
+                        <div class="stat-label">Eventos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Calificación</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-card">
+                    <h2 class="search-title">Encuentra tu músico ideal</h2>
+                    
+                    <div class="search-grid">
+                        <div class="search-field">
+                            <label>Género Musical</label>
+                            <select class="search-select">
+                                <option value="">Seleccionar género</option>
+                                <option value="rock">Rock</option>
+                                <option value="pop">Pop</option>
+                                <option value="jazz">Jazz</option>
+                                <option value="classical">Clásica</option>
+                                <option value="mariachi">Mariachi</option>
+                                <option value="electronic">Electrónica</option>
+                                <option value="acoustic">Acústica</option>
+                            </select>
+                        </div>
+
+                        <div class="search-field">
+                            <label>Ubicación</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" placeholder="Ciudad o región" class="search-input">
+                            </div>
+                        </div>
+
+                        <div class="search-field">
+                            <label>Fecha del evento</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-calendar"></i>
+                                <input type="date" class="search-input">
+                            </div>
+                        </div>
+
+                        <div class="search-field">
+                            <label class="invisible">Buscar</label>
+                            <button class="btn-search">
+                                <i class="fas fa-search"></i>
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="quick-filters">
+                        <span class="filter-label">Filtros populares:</span>
+                        <button class="filter-tag">Disponible hoy</button>
+                        <button class="filter-tag">Bajo presupuesto</button>
+                        <button class="filter-tag">Cerca de ti</button>
+                        <button class="filter-tag">Mejor calificados</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Musicians Grid -->
+        <section class="musicians-section">
+            <div class="musicians-container">
+                <div class="section-header">
+                    <h2 class="section-title">Músicos Destacados</h2>
+                    <p class="section-subtitle">
+                        Descubre talento excepcional para tu próximo evento. 
+                        Cada músico ha sido verificado y cuenta con excelentes reseñas.
+                    </p>
+                </div>
+
+                <div class="musicians-grid" id="musicians-grid">
+                    <!-- Musicians cards will be generated by JavaScript -->
+                </div>
+
+                <div class="load-more-container">
+                    <button class="btn-load-more">Ver más músicos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <span class="logo-text">HarmoNet</span>
+                    </div>
+                    <p class="brand-description">
+                        Conectando eventos con los mejores músicos profesionales de México.
+                    </p>
+                    <div class="social-links">
+                        <i class="fab fa-facebook social-icon"></i>
+                        <i class="fab fa-twitter social-icon"></i>
+                        <i class="fab fa-instagram social-icon"></i>
+                        <i class="fab fa-youtube social-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Para eventos -->
+                <div class="footer-column">
+                    <h3>Para eventos</h3>
+                    <ul>
+                        <li><a href="#">Buscar músicos</a></li>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Para músicos -->
+                <div class="footer-column">
+                    <h3>Para músicos</h3>
+                    <ul>
+                        <li><a href="#">Registrarse</a></li>
+                        <li><a href="#">Crear perfil</a></li>
+                        <li><a href="#">Promoción</a></li>
+                        <li><a href="#">Recursos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Soporte -->
+                <div class="footer-column">
+                    <h3>Soporte</h3>
+                    <ul>
+                        <li><a href="#">Centro de ayuda</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 HarmoNet. Todos los derechos reservados.</p>
+                <p>Hecho con ♪ para los amantes de la música</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
