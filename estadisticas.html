@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas | HarmoNet</title>
+    <link rel="stylesheet" href="/estilos/estadisticas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="/Imagenes/logo-harmonet.png" alt="Logo de HarmoNet" class="logo-image">
+            <span>HarmoNet</span>
+        </div>
+        <a href="menuMusico.html" class="btn back-to-profile-btn">Volver al Perfil</a>
+    </header>
+
+    <main class="stats-container">
+        <h1 class="screen-title-main">Estadísticas</h1>
+
+        <div class="card stats-chart-card">
+            <h2 class="card-title-main">Estadísticas</h2>
+            <p class="summary-text">Total de este mes: 10 contrataciones | Promedio mensual: 8.5</p>
+
+            <div class="chart-content">
+                <div class="bar-chart-visual">
+                    <div class="chart-label-top">Contrataciones</div>
+                    <div class="chart-grid">
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 50%;"></div><span class="month">Ene</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 60%;"></div><span class="month">Feb</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 75%;"></div><span class="month">Mar</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 55%;"></div><span class="month">Abr</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 90%;"></div><span class="month">May</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 85%;"></div><span class="month">Jun</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 70%;"></div><span class="month">Jul</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 95%;"></div><span class="month">Ago</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 100%;"></div><span class="month">Sep</span></div>
+                        <div class="chart-bar-item"><div class="chart-bar" style="height: 80%;"></div><span class="month">Oct</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card review-card">
+            <h2 class="card-title-main">Opiniones de los clientes</h2>
+            <p class="summary-text">135 reseñas</p>
+
+            <div class="rating-summary">
+                <span class="average-rating">4.6</span>
+                <div class="star-display">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star half-filled"></i>
+                </div>
+            </div>
+
+            <div class="rating-breakdown">
+                <div class="rating-row">
+                    <span class="rating-label">5 estrellas</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" data-gradient="5" id="fill-5"></div>
+                    </div>
+                    <span class="rating-percent" id="percent-5"></span> 
+                </div>
+                <div class="rating-row">
+                    <span class="rating-label">4 estrellas</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" data-gradient="4" id="fill-4"></div>
+                    </div>
+                    <span class="rating-percent" id="percent-4"></span>
+                </div>
+                <div class="rating-row">
+                    <span class="rating-label">3 estrellas</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" data-gradient="3" id="fill-3"></div>
+                    </div>
+                    <span class="rating-percent" id="percent-3"></span>
+                </div>
+                <div class="rating-row">
+                    <span class="rating-label">2 estrellas</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" data-gradient="2" id="fill-2"></div>
+                    </div>
+                    <span class="rating-percent" id="percent-2"></span>
+                </div>
+                <div class="rating-row">
+                    <span class="rating-label">1 estrellas</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" data-gradient="1" id="fill-1"></div>
+                    </div>
+                    <span class="rating-percent" id="percent-1"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
